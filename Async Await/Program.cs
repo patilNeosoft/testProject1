@@ -42,6 +42,15 @@
         });
         return result;
     }
-
-    
+    static async Task<bool> Method5()
+    {
+        bool result = false;
+        await Task.Run(() =>
+        {
+            Thread.Sleep(5000);
+            Console.WriteLine("method 5");
+            result = true;
+        });
+        return result;
+    }
 }
