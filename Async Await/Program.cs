@@ -14,6 +14,10 @@
         
     }
 
+   
+   //comment added
+   
+   
     static async Task<bool> Method1()
     {
         bool result = false;
@@ -44,7 +48,6 @@
         });
         return result;
     }
-
     static async void Method4()
     {
         await Task.Run(() =>
@@ -53,6 +56,6 @@
             Console.WriteLine("method 4");
         });
     }
-
-
+}
+    
 }
