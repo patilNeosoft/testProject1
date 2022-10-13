@@ -8,7 +8,9 @@
     {
         var letCompleteMethod1 = await Method1();
         var letCompleteMethod2 = await Method3();
+        var letCompleteMethod = await Method4();
         Method2();
+
         
     }
 
@@ -46,6 +48,14 @@
         });
         return result;
     }
-
+    static async void Method4()
+    {
+        await Task.Run(() =>
+        {
+            Thread.Sleep(5000);
+            Console.WriteLine("method 4");
+        });
+    }
+}
     
 }
